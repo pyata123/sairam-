@@ -1,31 +1,24 @@
-package dt;
-class Polygon
+
+import java.util.*;
+public class main 
 {
-	void info()
+
+	public static void main(String[] args)
 	{
-		System.out.println("closed container");
+	int a[]=new int[100];
+	int i,j,k,total=0;
+	System.out.println("enter any 5 numbers");
+	Scanner sc=new Scanner(System.in);
+	for(i=0;i<5;i++)
+	{
+		a[i]=sc.nextInt();
+		
+	}
+k=sc.nextInt();
+for(i=0;i<5;i++)
+{
+	total=total+a[i];
+}
+System.out.println("total is"+total);
 	}
 }
-public class main
-{
-public static void main(String args[])
-{
-	Square s=new Square();
-	s.info();
-}
-}
-class Square extends Polygon
-{
-	void info()
-	{
-		System.out.println("all sides same");
-	}
-	void area()
-	{
-System.out.println("area of Square");
-}
-}
-
-
-
-
